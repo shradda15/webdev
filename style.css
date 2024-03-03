@@ -1,0 +1,14 @@
+h3 {
+    color: darkblue;
+    font-style: italic;
+}
+
+.container {
+    text-align: center;
+    border: 50px;
+    margin: 70px
+}
+
+img {
+    margin: 70px;
+}
