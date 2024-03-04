@@ -12,3 +12,8 @@ h3 {
 img {
     margin: 70px;
 }
+
+.cont {
+    display: flex;
+    flex-direction: row;
+}
