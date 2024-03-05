@@ -43,39 +43,62 @@
     <h1>Shopping Website</h1>
     <a href="cart.html"><button>cart</button></a>
     <div class="cont">
-        <div class="container" style="background-color: rgb(54, 162, 204);">
+        <div id="1" name="chocolate" class="container" style="background-color: rgb(54, 162, 204);">
             <img src="C:\Users\shrad\OneDrive\Desktop\new\p1\chocolates.png" alt="">
             <h3>Fabelle Chocolates</h3>
             <p>M.R.P.: ₹5,196</p>
+            <label for="1">Select Quantity:</label>
         </div>
-        <div class="container" style="background-color: rgb(54, 162, 204);">
+        <div id="2" name="sunglass" class="container" style="background-color: rgb(54, 162, 204);">
             <img src="C:\Users\shrad\OneDrive\Desktop\new\p1\sunglasses.png" alt="">
             <h4>Sunglass</h4>
             <p>M.R.P.: ₹6,000</p>
+            <label for="2">Select Quantity:</label>
         </div>
 
-        <div class="container" style="background-color: rgb(54, 162, 204);">
+        <div id="3" name="perfume" class="container" style="background-color: rgb(54, 162, 204);">
             <img src="c:\Users\shrad\OneDrive\Desktop\new\p1\perfume.png" alt="">
             <h4>Perfumes</h4>
             <p>M.R.P.: ₹1,797</p>
+            <label for="3">Select Quantity:</label>
         </div>
 
-        <div class="container" style="background-color: rgb(54, 162, 204);">
+        <div id="4" name="cube" class="container" style="background-color: rgb(54, 162, 204);">
             <img src="c:\Users\shrad\OneDrive\Desktop\new\p1\cube.png" alt="">
             <h3>Cubes</h3>
             <p>M.R.P.: ₹1,999</p>
+            <label for="4">Select Quantity:</label>
+
         </div>
-        <div class="container" style="background-color: rgb(54, 162, 204);">
+        <div id="5" name="kite" class="container" style="background-color: rgb(54, 162, 204);">
             <img src="c:\Users\shrad\OneDrive\Desktop\new\p1\kite.png" alt="">
             <h4>Kites</h4>
             <p>M.R.P.: ₹1,199</p>
+            <label for="5">Select Quantity:</label>
         </div>
-        <div class="container" style="background-color: rgb(54, 162, 204);">
+        <div id="6" name="phone" class="container" style="background-color: rgb(54, 162, 204);">
             <img src="C:\Users\shrad\OneDrive\Desktop\new\p1\samsung.png" alt="">
             <h4>Samsung S21 5G</h4>
             <p>M.R.P.: ₹41,999</p>
+            <label for="6">Select Quantity:</label>
         </div>
     </div>
+    <script>
+        for (let i = 1; i < 7; i++) {
+            var v = document.getElementById(parseInt(i));
+            var button = document.createElement("button");
+            button.innerText = "Add to cart";
+            v.append(button);
+            var select = document.createElement("select");
+            for (let i = 0; i < 5; i++) {
+                var option = document.createElement("option");
+                option.value = i + 1;
+                option.text = i + 1;
+                select.append(option);
+            }
+            v.append(select);
+        }
+    </script>
 </body>
 
 </html>
