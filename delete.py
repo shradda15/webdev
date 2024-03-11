@@ -24,3 +24,4 @@ col.delete_one(myquery)
 query = { "name": {"$regex": "^s"} }
 col.delete_many(query)
 col.delete_many({})
+col.drop()
